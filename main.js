@@ -1,4 +1,4 @@
-console.log('object oriented programming')
+// console.log('object oriented programming')
 
 // //const stefania = {name: "stefania", surname: "dagnino", marks: [10, 9, 7, 8, 8]};
 const stefania = new Student("stefania", "dagnino", [10, 9, 7, 8, 8]);
@@ -27,9 +27,9 @@ const salma = new Student("salma", "sobhi", []);
 // console.log(calculateStudentMean(stefania));
 // console.log(calculateStudentMean(leonardo));
 
-console.log(stefania.calculateMean())
-console.log(leonardo.calculateMean())
-console.log(salma.calculateMean())
+// console.log(stefania.calculateMean())
+// console.log(leonardo.calculateMean())
+// console.log(salma.calculateMean())
 
 // // function addMark(student, newMark) {
 
@@ -47,14 +47,14 @@ console.log(salma.calculateMean())
 // // addMark(leonardo, 20);
 // // console.log(calculateStudentMean(leonardo));
 
-stefania.addMark(10);
-console.log(stefania.calculateMean());
+// stefania.addMark(10);
+// console.log(stefania.calculateMean());
 
-leonardo.addMark(20);
-console.log(leonardo.calculateMean());
+// leonardo.addMark(20);
+// console.log(leonardo.calculateMean());
 
-salma.addMark(8);
-console.log(salma.calculateMean());
+// salma.addMark(8);
+// console.log(salma.calculateMean());
 
 // // function creaScheda(student) {
 
@@ -68,9 +68,9 @@ console.log(salma.calculateMean());
 // // console.log(creaScheda(stefania));
 // // console.log(creaScheda(leonardo));
 
-console.log(stefania.toString());
-console.log(leonardo.toString());
-console.log(salma.toString());
+// console.log(stefania.toString());
+// console.log(leonardo.toString());
+// console.log(salma.toString());
 
 // console.log("///////////////////////////////////");
 // console.log("////////ESERCIZIO RETTANGOLO///////");
