@@ -29,6 +29,13 @@ class Student extends Human{
 
     }
 
+    // allMean() {
+    //     if (this.students.length === 0) return 0;
+
+    //     const sumMean = this.students.map(a => a.calculateMean()).reduce((a, b) => a + b, 0);
+    //     return sumMean / this.students.length;
+    // }
+
     addMark(newMark) {
 
         if (newMark >= 0 && newMark <= 10) {
@@ -38,9 +45,15 @@ class Student extends Human{
         }
     }
 
+    // addTutee(newTutee) {
+    //     if (newTutee) {
+    //         t
+    //     }
+    // }
+
     toString() {
         const scheda = super.toString() +
-                       "media: " + this.calculateMean()
+                       "media: " + this.calculateMean();                    
     
         return scheda;
     }

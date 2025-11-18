@@ -6,7 +6,7 @@ const stefania = new Student("stefania", "dagnino", [10, 9, 7, 8, 8]);
 // //const leonardo = {name: "leonardo", surname: "silva", marks: [3, 4, 4, 2, 5]};
 const leonardo = new Student("leonardo", "silva", [3, 4, 4, 2, 5]);
 
-const salma = new Student("salma", "sobhi", []);
+const salma = new Student("salma", "sobhi", [5, 8, 9, 10, 7]);
 
 // // function calculateStudentMean(student){
 
@@ -85,18 +85,37 @@ const andrea = new Teacher("andrea", "asioli", [stefania, leonardo, salma]);
 
 const eros = new StudentTutor("eros", "balan", [10, 9, 7, 8, 8], leonardo);
 
-console.log(stefania.toString());
-console.log(andrea.toString());
+// console.log(stefania.toString());
+// console.log(andrea.toString());
+// console.log(eros.toString());
+
+// eros.addMark(7);
+// console.log(eros.calculateMean());
+// console.log(leonardo.calculateMean());
+
+// leonardo.addMark(10);
+// leonardo.addMark(9);
+// leonardo.addMark(9.5);
+// leonardo.addMark(8);
+// console.log(leonardo.calculateMean());
+// console.log(eros.calculateMean());
+
+// eros.addTutee(leonardo)
 console.log(eros.toString());
+//nome: eros
+//cognome: balan
+//media: 9.1666666
+//--------------------
+//allievo: leonardo silva
+//media allievo: 6.0555555
 
-eros.addMark(7);
-console.log(eros.calculateMean());
-console.log(leonardo.calculateMean());
-
-leonardo.addMark(10);
-leonardo.addMark(9);
-leonardo.addMark(9.5);
-leonardo.addMark(8);
-console.log(leonardo.calculateMean());
-console.log(eros.calculateMean());
-
+console.log(andrea.toString());
+//nome: andrea
+//cognome: asioli
+//--------------------
+//allievi:
+//stefania dagnino - media: 8
+//leonardo silva - media: 6.0555
+//salma sobhi - media: 6
+//--------------------
+//media della classe :6,68
