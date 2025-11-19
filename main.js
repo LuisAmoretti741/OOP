@@ -1,51 +1,74 @@
-// console.log('object oriented programming')
+console.log('object oriented programming')
 
-// //const stefania = {name: "stefania", surname: "dagnino", marks: [10, 9, 7, 8, 8]};
-const stefania = new Student("stefania", "dagnino", [10, 9, 7, 8, 8]);
+//const stefania = {name: "stefania", surname: "dagnino", marks: [10, 9, 7, 8, 8]};
 
-// //const leonardo = {name: "leonardo", surname: "silva", marks: [3, 4, 4, 2, 5]};
-const leonardo = new Student("leonardo", "silva", [3, 4, 4, 2, 5]);
 
-const salma = new Student("salma", "sobhi", [5, 8, 9, 10, 7]);
+//const leonardo = {name: "leonardo", surname: "silva", marks: [3, 4, 4, 2, 5]};
 
-// // function calculateStudentMean(student){
 
-// //     let sum = 0;
+// function calculateStudentMean(student){
 
-// //     for (let i = 0; i < student.marks.length; i++) {
-// //         const mark = student.marks[i];
+//     let sum = 0;
+
+//     for (let i = 0; i < student.marks.length; i++) {
+//         const mark = student.marks[i];
         
-// //         sum += mark;
-// //     }
+//         sum += mark;
+//     }
 
-// //     const mean = sum / student.marks.length;
+//     const mean = sum / student.marks.length;
 
-// //     return mean;
+//     return mean;
 
-// // }
+// }
 
 // console.log(calculateStudentMean(stefania));
 // console.log(calculateStudentMean(leonardo));
+
+
+// function addMark(student, newMark) {
+
+//     if(newMark >= 0 && newMark <= 10){
+//         student.marks.push(newMark);
+//     } else {
+//         console.log('errore, voto non valido');
+//     }
+    
+// }
+
+// addMark(stefania, 10);
+// console.log(calculateStudentMean(stefania));
+
+// addMark(leonardo, 20);
+// console.log(calculateStudentMean(leonardo));
+
+
+
+// function creaScheda(student) {
+
+//     const scheda = "nome: " + student.name + "\n" +
+//                    "cognome: " + student.surname + "\n" +
+//                    "media: " + calculateStudentMean(student)
+    
+//     return scheda;
+    
+// }
+
+// console.log(creaScheda(stefania));
+// console.log(creaScheda(leonardo));
+
+
+
+
+// const stefania = new Student("stefania", "dagnino", [10, 9, 7, 8, 8])
+// const leonardo = new Student("leonardo", "silva", [3, 4, 4, 2, 5])
+// const salma = new Student("salma", "sobhi")
+
 
 // console.log(stefania.calculateMean())
 // console.log(leonardo.calculateMean())
 // console.log(salma.calculateMean())
 
-// // function addMark(student, newMark) {
-
-// //     if(newMark >= 0 && newMark <= 10){
-// //         student.marks.push(newMark);
-// //     } else {
-// //         console.log('errore, voto non valido');
-// //     }
-    
-// // }
-
-// // addMark(stefania, 10);
-// // console.log(calculateStudentMean(stefania));
-
-// // addMark(leonardo, 20);
-// // console.log(calculateStudentMean(leonardo));
 
 // stefania.addMark(10);
 // console.log(stefania.calculateMean());
@@ -53,54 +76,52 @@ const salma = new Student("salma", "sobhi", [5, 8, 9, 10, 7]);
 // leonardo.addMark(20);
 // console.log(leonardo.calculateMean());
 
-// salma.addMark(8);
-// console.log(salma.calculateMean());
-
-// // function creaScheda(student) {
-
-// //     const scheda = "nome: " + student.name + "\n" +
-// //                    "cognome: " + student.surname + "\n" +
-// //                    "media: " + calculateStudentMean(student)
-    
-// //     return scheda;
-    
-// // }
-// // console.log(creaScheda(stefania));
-// // console.log(creaScheda(leonardo));
-
-// console.log(stefania.toString());
+// console.log("Studente:\n" + stefania);
 // console.log(leonardo.toString());
-// console.log(salma.toString());
 
-// console.log("///////////////////////////////////");
-// console.log("////////ESERCIZIO RETTANGOLO///////");
-// console.log("///////////////////////////////////");
+// ////////////////////
 
-// const rettangolo01 = new Rettangolo(30, 20 , 'rosso');
-// console.log(rettangolo01.calculateArea());
-// console.log(rettangolo01.calculatePerimeter());
-// console.log(rettangolo01.toString());
+// const rect1 = new Rectangle(30, 20, 'rosso');
 
-const andrea = new Teacher("andrea", "asioli", [stefania, leonardo, salma]);
+// console.log(rect1.calculateArea()) // 600
+// console.log(rect1.calculatePerimeter()); // 100
+// console.log(rect1.toString())
+//Rettangolo
+//base: 30
+//altezza: 20
+//colore: rosso
+//area: 600
+//perimetro: 100
 
-const eros = new StudentTutor("eros", "balan", [10, 9, 7, 8, 8], leonardo);
+const stefania = new Student("stefania", "dagnino", 1990, [10, 9, 7, 8, 8]);
+const leonardo = new Student("leonardo", "silva", 1991, [3, 4, 4, 2, 5]);
+const salma = new Student("salma", "sobhi", 2000, [6, 6, 6]);
 
-// console.log(stefania.toString());
-// console.log(andrea.toString());
-// console.log(eros.toString());
+const eros = new StudentTutor("eros", "balan", 2005, [10, 9, 7, 8, 8], leonardo);
 
-// eros.addMark(7);
-// console.log(eros.calculateMean());
-// console.log(leonardo.calculateMean());
+const andrea = new Teacher("andrea", "asioli", 1970, [stefania, leonardo, salma]);
+const evelin = new Teacher("evelin", "medina", 1985, [eros]);
 
-// leonardo.addMark(10);
-// leonardo.addMark(9);
-// leonardo.addMark(9.5);
-// leonardo.addMark(8);
-// console.log(leonardo.calculateMean());
-// console.log(eros.calculateMean());
 
-// eros.addTutee(leonardo)
+
+const elisabetta = new Principal ("elisabbetta", "fegino", 1960, [andrea, evelin])
+
+
+console.log(stefania.toString());
+
+
+eros.addMark(7);
+console.log(eros.calculateMean())
+console.log(leonardo.calculateMean())
+
+leonardo.addMark(10);
+leonardo.addMark(9);
+leonardo.addMark(9.5);
+leonardo.addMark(8);
+console.log(leonardo.calculateMean());
+console.log(eros.calculateMean());
+
+
 console.log(eros.toString());
 //nome: eros
 //cognome: balan
@@ -108,6 +129,7 @@ console.log(eros.toString());
 //--------------------
 //allievo: leonardo silva
 //media allievo: 6.0555555
+
 
 console.log(andrea.toString());
 //nome: andrea
@@ -119,3 +141,13 @@ console.log(andrea.toString());
 //salma sobhi - media: 6
 //--------------------
 //media della classe :6,68
+
+
+console.log(elisabetta.toString())
+
+//nome: elisabetta
+//cognome: fegino
+//--------------------
+//insegnanti:
+//asioli andrea - numero studenti: 3
+//evelin medina - numero studenti: 1
